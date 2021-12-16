@@ -15,6 +15,8 @@
 		F2088056276BAAA8008FD0BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2088054276BAAA8008FD0BF /* LaunchScreen.storyboard */; };
 		F2088061276BAAA9008FD0BF /* AppleTracksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088060276BAAA9008FD0BF /* AppleTracksTests.swift */; };
 		F208806C276BAAA9008FD0BF /* AppleTracksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208806B276BAAA9008FD0BF /* AppleTracksUITests.swift */; };
+		F208807A276BABD2008FD0BF /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088079276BABD2008FD0BF /* URLSessionProtocol.swift */; };
+		F208807C276BAC5D008FD0BF /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208807B276BAC5D008FD0BF /* NetworkReachabilityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		F2088067276BAAA9008FD0BF /* AppleTracksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleTracksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F208806B276BAAA9008FD0BF /* AppleTracksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTracksUITests.swift; sourceTree = "<group>"; };
 		F208806D276BAAA9008FD0BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2088079276BABD2008FD0BF /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		F208807B276BAC5D008FD0BF /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				F2088049276BAAA7008FD0BF /* AppDelegate.swift */,
 				F208804B276BAAA7008FD0BF /* SceneDelegate.swift */,
 				F208804D276BAAA7008FD0BF /* TracksViewController.swift */,
+				F2088079276BABD2008FD0BF /* URLSessionProtocol.swift */,
+				F208807B276BAC5D008FD0BF /* NetworkReachabilityManager.swift */,
 				F208804F276BAAA7008FD0BF /* Main.storyboard */,
 				F2088052276BAAA8008FD0BF /* Assets.xcassets */,
 				F2088054276BAAA8008FD0BF /* LaunchScreen.storyboard */,
@@ -258,6 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F208807C276BAC5D008FD0BF /* NetworkReachabilityManager.swift in Sources */,
+				F208807A276BABD2008FD0BF /* URLSessionProtocol.swift in Sources */,
 				F208804E276BAAA7008FD0BF /* TracksViewController.swift in Sources */,
 				F208804A276BAAA7008FD0BF /* AppDelegate.swift in Sources */,
 				F208804C276BAAA7008FD0BF /* SceneDelegate.swift in Sources */,
