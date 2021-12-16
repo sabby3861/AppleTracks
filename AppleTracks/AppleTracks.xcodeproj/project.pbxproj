@@ -112,7 +112,6 @@
 				F2088049276BAAA7008FD0BF /* AppDelegate.swift */,
 				F208804B276BAAA7008FD0BF /* SceneDelegate.swift */,
 				F208804D276BAAA7008FD0BF /* TracksViewController.swift */,
-				F2088079276BABD2008FD0BF /* URLSessionProtocol.swift */,
 				F2088083276BD4DE008FD0BF /* Helpers */,
 				F208804F276BAAA7008FD0BF /* Main.storyboard */,
 				F2088052276BAAA8008FD0BF /* Assets.xcassets */,
@@ -143,6 +142,7 @@
 		F2088083276BD4DE008FD0BF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F2088079276BABD2008FD0BF /* URLSessionProtocol.swift */,
 				F208807B276BAC5D008FD0BF /* NetworkReachabilityManager.swift */,
 				F208807D276BD42A008FD0BF /* ATStoryBoard.swift */,
 				F208807F276BD46B008FD0BF /* ATReusableIdentifier.swift */,
