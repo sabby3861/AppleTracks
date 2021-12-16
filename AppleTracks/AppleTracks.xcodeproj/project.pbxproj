@@ -17,6 +17,9 @@
 		F208806C276BAAA9008FD0BF /* AppleTracksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208806B276BAAA9008FD0BF /* AppleTracksUITests.swift */; };
 		F208807A276BABD2008FD0BF /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088079276BABD2008FD0BF /* URLSessionProtocol.swift */; };
 		F208807C276BAC5D008FD0BF /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208807B276BAC5D008FD0BF /* NetworkReachabilityManager.swift */; };
+		F208807E276BD42A008FD0BF /* ATStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208807D276BD42A008FD0BF /* ATStoryBoard.swift */; };
+		F2088080276BD46B008FD0BF /* ATReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208807F276BD46B008FD0BF /* ATReusableIdentifier.swift */; };
+		F2088082276BD4AB008FD0BF /* ARConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088081276BD4AB008FD0BF /* ARConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		F208806D276BAAA9008FD0BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2088079276BABD2008FD0BF /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		F208807B276BAC5D008FD0BF /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		F208807D276BD42A008FD0BF /* ATStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATStoryBoard.swift; sourceTree = "<group>"; };
+		F208807F276BD46B008FD0BF /* ATReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATReusableIdentifier.swift; sourceTree = "<group>"; };
+		F2088081276BD4AB008FD0BF /* ARConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +113,7 @@
 				F208804B276BAAA7008FD0BF /* SceneDelegate.swift */,
 				F208804D276BAAA7008FD0BF /* TracksViewController.swift */,
 				F2088079276BABD2008FD0BF /* URLSessionProtocol.swift */,
-				F208807B276BAC5D008FD0BF /* NetworkReachabilityManager.swift */,
+				F2088083276BD4DE008FD0BF /* Helpers */,
 				F208804F276BAAA7008FD0BF /* Main.storyboard */,
 				F2088052276BAAA8008FD0BF /* Assets.xcassets */,
 				F2088054276BAAA8008FD0BF /* LaunchScreen.storyboard */,
@@ -132,6 +138,17 @@
 				F208806D276BAAA9008FD0BF /* Info.plist */,
 			);
 			path = AppleTracksUITests;
+			sourceTree = "<group>";
+		};
+		F2088083276BD4DE008FD0BF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F208807B276BAC5D008FD0BF /* NetworkReachabilityManager.swift */,
+				F208807D276BD42A008FD0BF /* ATStoryBoard.swift */,
+				F208807F276BD46B008FD0BF /* ATReusableIdentifier.swift */,
+				F2088081276BD4AB008FD0BF /* ARConstants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +285,10 @@
 				F208807A276BABD2008FD0BF /* URLSessionProtocol.swift in Sources */,
 				F208804E276BAAA7008FD0BF /* TracksViewController.swift in Sources */,
 				F208804A276BAAA7008FD0BF /* AppDelegate.swift in Sources */,
+				F2088082276BD4AB008FD0BF /* ARConstants.swift in Sources */,
+				F208807E276BD42A008FD0BF /* ATStoryBoard.swift in Sources */,
 				F208804C276BAAA7008FD0BF /* SceneDelegate.swift in Sources */,
+				F2088080276BD46B008FD0BF /* ATReusableIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
