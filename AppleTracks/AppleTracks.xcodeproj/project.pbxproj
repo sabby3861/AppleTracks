@@ -20,6 +20,10 @@
 		F208807E276BD42A008FD0BF /* ATStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208807D276BD42A008FD0BF /* ATStoryBoard.swift */; };
 		F2088080276BD46B008FD0BF /* ATReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208807F276BD46B008FD0BF /* ATReusableIdentifier.swift */; };
 		F2088082276BD4AB008FD0BF /* ARConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088081276BD4AB008FD0BF /* ARConstants.swift */; };
+		F2088085276BD6B9008FD0BF /* TracksViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088084276BD6B9008FD0BF /* TracksViewProtocols.swift */; };
+		F2088087276CCDE6008FD0BF /* TracksViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088086276CCDE5008FD0BF /* TracksViewPresenter.swift */; };
+		F2088089276CCDF5008FD0BF /* TracksViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088088276CCDF5008FD0BF /* TracksViewInteractor.swift */; };
+		F208808B276CCE03008FD0BF /* TracksViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208808A276CCE03008FD0BF /* TracksViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		F208807D276BD42A008FD0BF /* ATStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATStoryBoard.swift; sourceTree = "<group>"; };
 		F208807F276BD46B008FD0BF /* ATReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATReusableIdentifier.swift; sourceTree = "<group>"; };
 		F2088081276BD4AB008FD0BF /* ARConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARConstants.swift; sourceTree = "<group>"; };
+		F2088084276BD6B9008FD0BF /* TracksViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewProtocols.swift; sourceTree = "<group>"; };
+		F2088086276CCDE5008FD0BF /* TracksViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewPresenter.swift; sourceTree = "<group>"; };
+		F2088088276CCDF5008FD0BF /* TracksViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewInteractor.swift; sourceTree = "<group>"; };
+		F208808A276CCE03008FD0BF /* TracksViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +119,8 @@
 			children = (
 				F2088049276BAAA7008FD0BF /* AppDelegate.swift */,
 				F208804B276BAAA7008FD0BF /* SceneDelegate.swift */,
-				F208804D276BAAA7008FD0BF /* TracksViewController.swift */,
 				F2088083276BD4DE008FD0BF /* Helpers */,
+				F208808C276CCE81008FD0BF /* VIPER(TracksView) */,
 				F208804F276BAAA7008FD0BF /* Main.storyboard */,
 				F2088052276BAAA8008FD0BF /* Assets.xcassets */,
 				F2088054276BAAA8008FD0BF /* LaunchScreen.storyboard */,
@@ -149,6 +157,18 @@
 				F2088081276BD4AB008FD0BF /* ARConstants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F208808C276CCE81008FD0BF /* VIPER(TracksView) */ = {
+			isa = PBXGroup;
+			children = (
+				F208804D276BAAA7008FD0BF /* TracksViewController.swift */,
+				F2088084276BD6B9008FD0BF /* TracksViewProtocols.swift */,
+				F2088086276CCDE5008FD0BF /* TracksViewPresenter.swift */,
+				F2088088276CCDF5008FD0BF /* TracksViewInteractor.swift */,
+				F208808A276CCE03008FD0BF /* TracksViewRouter.swift */,
+			);
+			path = "VIPER(TracksView)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,11 +302,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F208807C276BAC5D008FD0BF /* NetworkReachabilityManager.swift in Sources */,
+				F2088087276CCDE6008FD0BF /* TracksViewPresenter.swift in Sources */,
+				F2088089276CCDF5008FD0BF /* TracksViewInteractor.swift in Sources */,
 				F208807A276BABD2008FD0BF /* URLSessionProtocol.swift in Sources */,
 				F208804E276BAAA7008FD0BF /* TracksViewController.swift in Sources */,
 				F208804A276BAAA7008FD0BF /* AppDelegate.swift in Sources */,
 				F2088082276BD4AB008FD0BF /* ARConstants.swift in Sources */,
 				F208807E276BD42A008FD0BF /* ATStoryBoard.swift in Sources */,
+				F2088085276BD6B9008FD0BF /* TracksViewProtocols.swift in Sources */,
+				F208808B276CCE03008FD0BF /* TracksViewRouter.swift in Sources */,
 				F208804C276BAAA7008FD0BF /* SceneDelegate.swift in Sources */,
 				F2088080276BD46B008FD0BF /* ATReusableIdentifier.swift in Sources */,
 			);
