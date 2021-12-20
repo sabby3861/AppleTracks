@@ -19,11 +19,23 @@
 		F208807C276BAC5D008FD0BF /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208807B276BAC5D008FD0BF /* NetworkReachabilityManager.swift */; };
 		F208807E276BD42A008FD0BF /* ATStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208807D276BD42A008FD0BF /* ATStoryBoard.swift */; };
 		F2088080276BD46B008FD0BF /* ATReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208807F276BD46B008FD0BF /* ATReusableIdentifier.swift */; };
-		F2088082276BD4AB008FD0BF /* ARConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088081276BD4AB008FD0BF /* ARConstants.swift */; };
+		F2088082276BD4AB008FD0BF /* ATConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088081276BD4AB008FD0BF /* ATConstants.swift */; };
 		F2088085276BD6B9008FD0BF /* TracksViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088084276BD6B9008FD0BF /* TracksViewProtocols.swift */; };
 		F2088087276CCDE6008FD0BF /* TracksViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088086276CCDE5008FD0BF /* TracksViewPresenter.swift */; };
 		F2088089276CCDF5008FD0BF /* TracksViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088088276CCDF5008FD0BF /* TracksViewInteractor.swift */; };
-		F208808B276CCE03008FD0BF /* TracksViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208808A276CCE03008FD0BF /* TracksViewRouter.swift */; };
+		F208808B276CCE03008FD0BF /* TracksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208808A276CCE03008FD0BF /* TracksRouter.swift */; };
+		F208808E276FBAFC008FD0BF /* ATActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208808D276FBAFC008FD0BF /* ATActivityView.swift */; };
+		F2088090276FBB82008FD0BF /* ATLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208808F276FBB82008FD0BF /* ATLayoutHelper.swift */; };
+		F2088092276FBBE1008FD0BF /* ATExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088091276FBBE1008FD0BF /* ATExtensions.swift */; };
+		F2088094276FBD10008FD0BF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088093276FBD10008FD0BF /* APIManager.swift */; };
+		F2088096276FBDA2008FD0BF /* ATPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088095276FBDA2008FD0BF /* ATPayload.swift */; };
+		F2088098276FBF86008FD0BF /* ATMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088097276FBF86008FD0BF /* ATMusic.swift */; };
+		F22F308B2770D8E800FA5EDD /* ATDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F308A2770D8E800FA5EDD /* ATDateFormatter.swift */; };
+		F22F308D2770DE1400FA5EDD /* ATTrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F308C2770DE1400FA5EDD /* ATTrackTableViewCell.swift */; };
+		F22F308F2770F12400FA5EDD /* TracksDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F308E2770F12400FA5EDD /* TracksDetailViewController.swift */; };
+		F22F30912771063900FA5EDD /* ATButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F30902771063900FA5EDD /* ATButton.swift */; };
+		F22F309327710CF300FA5EDD /* TracksDetailViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F309227710CF300FA5EDD /* TracksDetailViewProtocols.swift */; };
+		F22F309527710FEB00FA5EDD /* TracksDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F309427710FEB00FA5EDD /* TracksDetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +74,23 @@
 		F208807B276BAC5D008FD0BF /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		F208807D276BD42A008FD0BF /* ATStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATStoryBoard.swift; sourceTree = "<group>"; };
 		F208807F276BD46B008FD0BF /* ATReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATReusableIdentifier.swift; sourceTree = "<group>"; };
-		F2088081276BD4AB008FD0BF /* ARConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARConstants.swift; sourceTree = "<group>"; };
+		F2088081276BD4AB008FD0BF /* ATConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATConstants.swift; sourceTree = "<group>"; };
 		F2088084276BD6B9008FD0BF /* TracksViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewProtocols.swift; sourceTree = "<group>"; };
 		F2088086276CCDE5008FD0BF /* TracksViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewPresenter.swift; sourceTree = "<group>"; };
 		F2088088276CCDF5008FD0BF /* TracksViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewInteractor.swift; sourceTree = "<group>"; };
-		F208808A276CCE03008FD0BF /* TracksViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewRouter.swift; sourceTree = "<group>"; };
+		F208808A276CCE03008FD0BF /* TracksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksRouter.swift; sourceTree = "<group>"; };
+		F208808D276FBAFC008FD0BF /* ATActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATActivityView.swift; sourceTree = "<group>"; };
+		F208808F276FBB82008FD0BF /* ATLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATLayoutHelper.swift; sourceTree = "<group>"; };
+		F2088091276FBBE1008FD0BF /* ATExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATExtensions.swift; sourceTree = "<group>"; };
+		F2088093276FBD10008FD0BF /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F2088095276FBDA2008FD0BF /* ATPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATPayload.swift; sourceTree = "<group>"; };
+		F2088097276FBF86008FD0BF /* ATMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMusic.swift; sourceTree = "<group>"; };
+		F22F308A2770D8E800FA5EDD /* ATDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATDateFormatter.swift; sourceTree = "<group>"; };
+		F22F308C2770DE1400FA5EDD /* ATTrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATTrackTableViewCell.swift; sourceTree = "<group>"; };
+		F22F308E2770F12400FA5EDD /* TracksDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksDetailViewController.swift; sourceTree = "<group>"; };
+		F22F30902771063900FA5EDD /* ATButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATButton.swift; sourceTree = "<group>"; };
+		F22F309227710CF300FA5EDD /* TracksDetailViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksDetailViewProtocols.swift; sourceTree = "<group>"; };
+		F22F309427710FEB00FA5EDD /* TracksDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksDetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +143,10 @@
 			children = (
 				F2088049276BAAA7008FD0BF /* AppDelegate.swift */,
 				F208804B276BAAA7008FD0BF /* SceneDelegate.swift */,
+				F22F308E2770F12400FA5EDD /* TracksDetailViewController.swift */,
+				F22F309227710CF300FA5EDD /* TracksDetailViewProtocols.swift */,
+				F22F309427710FEB00FA5EDD /* TracksDetailRouter.swift */,
+				F22F30902771063900FA5EDD /* ATButton.swift */,
 				F2088083276BD4DE008FD0BF /* Helpers */,
 				F208808C276CCE81008FD0BF /* VIPER(TracksView) */,
 				F208804F276BAAA7008FD0BF /* Main.storyboard */,
@@ -154,7 +182,13 @@
 				F208807B276BAC5D008FD0BF /* NetworkReachabilityManager.swift */,
 				F208807D276BD42A008FD0BF /* ATStoryBoard.swift */,
 				F208807F276BD46B008FD0BF /* ATReusableIdentifier.swift */,
-				F2088081276BD4AB008FD0BF /* ARConstants.swift */,
+				F2088081276BD4AB008FD0BF /* ATConstants.swift */,
+				F208808D276FBAFC008FD0BF /* ATActivityView.swift */,
+				F208808F276FBB82008FD0BF /* ATLayoutHelper.swift */,
+				F2088091276FBBE1008FD0BF /* ATExtensions.swift */,
+				F2088093276FBD10008FD0BF /* APIManager.swift */,
+				F2088095276FBDA2008FD0BF /* ATPayload.swift */,
+				F22F308A2770D8E800FA5EDD /* ATDateFormatter.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -163,10 +197,12 @@
 			isa = PBXGroup;
 			children = (
 				F208804D276BAAA7008FD0BF /* TracksViewController.swift */,
+				F22F308C2770DE1400FA5EDD /* ATTrackTableViewCell.swift */,
 				F2088084276BD6B9008FD0BF /* TracksViewProtocols.swift */,
 				F2088086276CCDE5008FD0BF /* TracksViewPresenter.swift */,
 				F2088088276CCDF5008FD0BF /* TracksViewInteractor.swift */,
-				F208808A276CCE03008FD0BF /* TracksViewRouter.swift */,
+				F208808A276CCE03008FD0BF /* TracksRouter.swift */,
+				F2088097276FBF86008FD0BF /* ATMusic.swift */,
 			);
 			path = "VIPER(TracksView)";
 			sourceTree = "<group>";
@@ -301,18 +337,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2088096276FBDA2008FD0BF /* ATPayload.swift in Sources */,
+				F2088094276FBD10008FD0BF /* APIManager.swift in Sources */,
+				F22F30912771063900FA5EDD /* ATButton.swift in Sources */,
 				F208807C276BAC5D008FD0BF /* NetworkReachabilityManager.swift in Sources */,
 				F2088087276CCDE6008FD0BF /* TracksViewPresenter.swift in Sources */,
 				F2088089276CCDF5008FD0BF /* TracksViewInteractor.swift in Sources */,
 				F208807A276BABD2008FD0BF /* URLSessionProtocol.swift in Sources */,
+				F22F309527710FEB00FA5EDD /* TracksDetailRouter.swift in Sources */,
+				F22F308B2770D8E800FA5EDD /* ATDateFormatter.swift in Sources */,
+				F22F308F2770F12400FA5EDD /* TracksDetailViewController.swift in Sources */,
+				F2088090276FBB82008FD0BF /* ATLayoutHelper.swift in Sources */,
 				F208804E276BAAA7008FD0BF /* TracksViewController.swift in Sources */,
 				F208804A276BAAA7008FD0BF /* AppDelegate.swift in Sources */,
-				F2088082276BD4AB008FD0BF /* ARConstants.swift in Sources */,
+				F2088082276BD4AB008FD0BF /* ATConstants.swift in Sources */,
+				F2088092276FBBE1008FD0BF /* ATExtensions.swift in Sources */,
 				F208807E276BD42A008FD0BF /* ATStoryBoard.swift in Sources */,
 				F2088085276BD6B9008FD0BF /* TracksViewProtocols.swift in Sources */,
-				F208808B276CCE03008FD0BF /* TracksViewRouter.swift in Sources */,
+				F208808B276CCE03008FD0BF /* TracksRouter.swift in Sources */,
+				F2088098276FBF86008FD0BF /* ATMusic.swift in Sources */,
 				F208804C276BAAA7008FD0BF /* SceneDelegate.swift in Sources */,
 				F2088080276BD46B008FD0BF /* ATReusableIdentifier.swift in Sources */,
+				F22F308D2770DE1400FA5EDD /* ATTrackTableViewCell.swift in Sources */,
+				F208808E276FBAFC008FD0BF /* ATActivityView.swift in Sources */,
+				F22F309327710CF300FA5EDD /* TracksDetailViewProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
