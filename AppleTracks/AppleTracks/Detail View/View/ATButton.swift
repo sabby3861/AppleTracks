@@ -18,8 +18,7 @@ import UIKit
     @IBInspectable var cornerRadius:CGFloat = 10
     
     // The text that's shown in each state
-    @IBInspectable var selectedText:String = "Selected"
-    @IBInspectable var deselectedText:String = "Deselected"
+    @IBInspectable var selectedText:String = "More Details"
     
     // The color of text shown in each state
     @IBInspectable var textColorDeselected:UIColor = UIColor.lightGray
