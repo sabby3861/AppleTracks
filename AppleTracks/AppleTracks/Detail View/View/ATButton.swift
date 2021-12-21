@@ -43,25 +43,8 @@ import UIKit
         self.layer.cornerRadius = cornerRadius
         self.layer.masksToBounds = true
         
-        // Setup the Button Depending on What State it is in
-        if active {
-            setSelected()
-        } else {
-            setDeselected()
-        }
-        
+        setSelected()
         // Respond to touch events by user
-        self.addTarget(self, action: #selector(onPress), for: .touchUpInside)
-    }
-    
-    @objc func onPress() {
-        active = !active
-        
-        if active {
-            setSelected()
-        } else {
-            setDeselected()
-        }
     }
     
     // Set the selected properties
@@ -72,12 +55,4 @@ import UIKit
         self.setTitleColor(textColorSelected, for: .normal)
     }
     
-    // Set the deselcted properties
-    func setDeselected() {
-        border.lineDashPattern = [4, 4]
-        border.strokeColor = borderColorDeselected.cgColor
-        self.setTitle(deselectedText, for: .normal)
-        self.setTitleColor(textColorDeselected, for: .normal)
-    }
-
 }

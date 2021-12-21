@@ -10,6 +10,7 @@ import Foundation
 /// View Protocol
 protocol TracksDetailViewProtocol: AnyObject
 {
+    var router: TracksDetailRouterProtocol? {get set}
     var response: ATMusic? {get set}
     func showData(album: ATResponseProtocol)
 }
@@ -17,6 +18,6 @@ protocol TracksDetailViewProtocol: AnyObject
 /// Router Protocols and assembling Module
 protocol TracksDetailRouterProtocol: AnyObject
 {
-    //var presenter: TracksPresenterProtocol? {get set}
     func assembleModule(response: ATResponseProtocol, view: TracksDetailViewProtocol)
+    func openWebPage(for UrlString: String)
 }

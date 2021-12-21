@@ -30,6 +30,7 @@ class TracksViewPresenter: TracksPresenterProtocol {
 extension TracksViewPresenter: TracksOutputProtocol {
     func albumsInfoDidFetch(albums: [ATMusic]) {
         self.response = [ATMusic]()
+        //Sorting the dates here, using the generic extension
         self.response = albums.sorted(by: \.date, using: >)
         reloadData()
     }

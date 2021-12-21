@@ -8,7 +8,7 @@
 import UIKit
 
 class TracksDetailViewController: UIViewController, TracksDetailViewProtocol {
-    
+    var router: TracksDetailRouterProtocol?
     var response: ATMusic?
     
     @IBOutlet weak var trackNameLabel: UILabel!
@@ -19,6 +19,10 @@ class TracksDetailViewController: UIViewController, TracksDetailViewProtocol {
     @IBOutlet weak var artistImageView: UIImageView!
     var image: UIImage?
     
+    @IBAction func openUrlClicked(_ sender: Any) {
+        guard let pageUrl = response?.url else { return}
+        router?.openWebPage(for: pageUrl)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -33,7 +37,7 @@ class TracksDetailViewController: UIViewController, TracksDetailViewProtocol {
         artistLabel.text = album.name
         priceLabel.text = album.price.string
         durationLabel.text = album.duration.string
-        let date = DateFormatter.yyyyMMdd.string(from: album.date)
+        let date = DateFormatter.dateString.string(from: album.date)
         releaseDateLabel.text = date
         guard let urlString = URL(string: album.image!) else { return }
         artistImageView.load(url: urlString)

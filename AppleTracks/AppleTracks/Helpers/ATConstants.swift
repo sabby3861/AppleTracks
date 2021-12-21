@@ -16,3 +16,5 @@ let networkError = "Your network seems to be down, please check your connection 
 let noArtist = "We don't have any artist to show"
 let noAlbum = "We don't have any album to show"
 let errorMessage = "There must be headers"
+let atDateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+let atDateStringFormat = "dd-MM-yyyy"

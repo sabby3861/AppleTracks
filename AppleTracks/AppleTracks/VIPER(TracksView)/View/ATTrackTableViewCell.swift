@@ -39,6 +39,8 @@ class ATTrackTableViewCell: UITableViewCell {
         } else {
             artistNameLabel.text = noArtist
         }
+        
+        priceLabel.text = album.price.string
         guard let imageUrl = URL(string: (album.image)!) else { return }
         artistImageView.load(url: imageUrl)
     }

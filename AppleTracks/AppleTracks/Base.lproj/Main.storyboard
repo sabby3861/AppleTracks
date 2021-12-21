@@ -138,7 +138,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLw-7l-3Sq">
-                                        <rect key="frame" x="10" y="270" width="394" height="20.5"/>
+                                        <rect key="frame" x="20" y="270" width="374" height="20.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="DoZ-qa-cCZ"/>
                                         </constraints>
@@ -147,7 +147,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G81-wj-gRT">
-                                        <rect key="frame" x="10" y="300.5" width="394" height="20.5"/>
+                                        <rect key="frame" x="20" y="300.5" width="374" height="20.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="RUj-Vm-eBV"/>
                                         </constraints>
@@ -156,7 +156,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgl-mz-G8f">
-                                        <rect key="frame" x="10" y="331" width="394" height="20.5"/>
+                                        <rect key="frame" x="20" y="331" width="374" height="20.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="Ed4-zv-d47"/>
                                         </constraints>
@@ -165,7 +165,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYM-ra-hZ1">
-                                        <rect key="frame" x="10" y="361.5" width="394" height="20.5"/>
+                                        <rect key="frame" x="20" y="361.5" width="374" height="20.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="FXH-yA-bEe"/>
                                         </constraints>
@@ -174,7 +174,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be8-yU-mDE">
-                                        <rect key="frame" x="10" y="392" width="394" height="20.5"/>
+                                        <rect key="frame" x="20" y="392" width="374" height="20.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="iur-ns-Pb0"/>
                                         </constraints>
@@ -193,39 +193,56 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="customBorderColor">
-                                                <color key="value" red="1" green="0.53882603340000002" blue="0.2782437847" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorSelected">
+                                                <color key="value" red="1" green="0.56456872150000004" blue="0.28009491479999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorDeselected">
+                                                <color key="value" red="1" green="0.56456872150000004" blue="0.28009491479999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="selectedText" value="More Details"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="deselectedText" value="More Details"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorDeselected">
+                                                <color key="value" systemColor="labelColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorSelected">
+                                                <color key="value" systemColor="labelColor"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="openUrlClicked:" destination="VvK-jg-PWb" eventType="touchUpInside" id="qtZ-xa-f49"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Be8-yU-mDE" firstAttribute="top" secondItem="bYM-ra-hZ1" secondAttribute="bottom" constant="10" id="4TV-nO-ZS5"/>
                                     <constraint firstItem="Hgl-mz-G8f" firstAttribute="top" secondItem="G81-wj-gRT" secondAttribute="bottom" constant="10" id="7ul-Rt-wqy"/>
-                                    <constraint firstItem="Be8-yU-mDE" firstAttribute="leading" secondItem="eLS-cz-I7J" secondAttribute="leading" constant="10" id="Dva-Am-J21"/>
-                                    <constraint firstAttribute="trailing" secondItem="jLw-7l-3Sq" secondAttribute="trailing" constant="10" id="GbE-nx-5kW"/>
-                                    <constraint firstItem="Hgl-mz-G8f" firstAttribute="leading" secondItem="eLS-cz-I7J" secondAttribute="leading" constant="10" id="LTA-4n-PcA"/>
-                                    <constraint firstItem="PN4-2I-xyo" firstAttribute="leading" secondItem="eLS-cz-I7J" secondAttribute="leading" constant="85" id="NPM-KM-vuu"/>
+                                    <constraint firstItem="Be8-yU-mDE" firstAttribute="leading" secondItem="eLS-cz-I7J" secondAttribute="leading" constant="20" id="Dva-Am-J21"/>
+                                    <constraint firstAttribute="trailing" secondItem="jLw-7l-3Sq" secondAttribute="trailing" constant="20" id="GbE-nx-5kW"/>
+                                    <constraint firstItem="Hgl-mz-G8f" firstAttribute="leading" secondItem="eLS-cz-I7J" secondAttribute="leading" constant="20" id="LTA-4n-PcA"/>
+                                    <constraint firstItem="PN4-2I-xyo" firstAttribute="leading" relation="lessThanOrEqual" secondItem="eLS-cz-I7J" secondAttribute="leading" constant="85" id="NPM-KM-vuu"/>
                                     <constraint firstAttribute="bottom" secondItem="sWt-49-iJz" secondAttribute="bottom" id="Qmq-SZ-n65"/>
                                     <constraint firstItem="sWt-49-iJz" firstAttribute="centerX" secondItem="eLS-cz-I7J" secondAttribute="centerX" id="RSh-im-idS"/>
                                     <constraint firstAttribute="trailing" secondItem="sWt-49-iJz" secondAttribute="trailing" id="Rw3-dp-Ssd"/>
-                                    <constraint firstAttribute="trailing" secondItem="bYM-ra-hZ1" secondAttribute="trailing" constant="10" id="Wbj-hF-bAR"/>
-                                    <constraint firstItem="G81-wj-gRT" firstAttribute="leading" secondItem="eLS-cz-I7J" secondAttribute="leading" constant="10" id="Zdd-Mo-3Xe"/>
+                                    <constraint firstAttribute="trailing" secondItem="bYM-ra-hZ1" secondAttribute="trailing" constant="20" id="Wbj-hF-bAR"/>
+                                    <constraint firstItem="G81-wj-gRT" firstAttribute="leading" secondItem="eLS-cz-I7J" secondAttribute="leading" constant="20" id="Zdd-Mo-3Xe"/>
                                     <constraint firstItem="G81-wj-gRT" firstAttribute="top" secondItem="jLw-7l-3Sq" secondAttribute="bottom" constant="10" id="aRv-mf-wLJ"/>
                                     <constraint firstItem="sWt-49-iJz" firstAttribute="top" secondItem="eLS-cz-I7J" secondAttribute="top" id="asD-d7-SbP"/>
-                                    <constraint firstAttribute="trailing" secondItem="Be8-yU-mDE" secondAttribute="trailing" constant="10" id="fcF-P9-e7i"/>
-                                    <constraint firstItem="bYM-ra-hZ1" firstAttribute="leading" secondItem="eLS-cz-I7J" secondAttribute="leading" constant="10" id="jhg-ci-qee"/>
-                                    <constraint firstAttribute="trailing" secondItem="Hgl-mz-G8f" secondAttribute="trailing" constant="10" id="l6Q-LU-u0f"/>
+                                    <constraint firstAttribute="trailing" secondItem="Be8-yU-mDE" secondAttribute="trailing" constant="20" id="fcF-P9-e7i"/>
+                                    <constraint firstItem="bYM-ra-hZ1" firstAttribute="leading" secondItem="eLS-cz-I7J" secondAttribute="leading" constant="20" id="jhg-ci-qee"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hgl-mz-G8f" secondAttribute="trailing" constant="20" id="l6Q-LU-u0f"/>
                                     <constraint firstItem="jLw-7l-3Sq" firstAttribute="top" secondItem="sWt-49-iJz" secondAttribute="bottom" constant="20" id="lHY-Cn-QhL"/>
                                     <constraint firstItem="bYM-ra-hZ1" firstAttribute="top" secondItem="Hgl-mz-G8f" secondAttribute="bottom" constant="10" id="r8G-U8-uYv"/>
-                                    <constraint firstAttribute="trailing" secondItem="G81-wj-gRT" secondAttribute="trailing" constant="10" id="sQ3-GA-7nN"/>
+                                    <constraint firstAttribute="trailing" secondItem="G81-wj-gRT" secondAttribute="trailing" constant="20" id="sQ3-GA-7nN"/>
                                     <constraint firstItem="sWt-49-iJz" firstAttribute="leading" secondItem="eLS-cz-I7J" secondAttribute="leading" id="tlL-7f-jsv"/>
-                                    <constraint firstAttribute="trailing" secondItem="PN4-2I-xyo" secondAttribute="trailing" constant="85" id="uXj-Ka-vgQ"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="PN4-2I-xyo" secondAttribute="trailing" constant="85" id="uXj-Ka-vgQ"/>
                                     <constraint firstItem="PN4-2I-xyo" firstAttribute="top" secondItem="Be8-yU-mDE" secondAttribute="bottom" constant="50" id="w9e-jH-lP7"/>
-                                    <constraint firstItem="jLw-7l-3Sq" firstAttribute="leading" secondItem="eLS-cz-I7J" secondAttribute="leading" constant="10" id="xyC-yp-YRw"/>
+                                    <constraint firstItem="jLw-7l-3Sq" firstAttribute="leading" secondItem="eLS-cz-I7J" secondAttribute="leading" constant="20" id="xyC-yp-YRw"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="VvK-jg-PWb" id="WsW-NP-omc"/>
@@ -276,7 +293,7 @@
     </scenes>
     <designables>
         <designable name="PN4-2I-xyo">
-            <size key="intrinsicContentSize" width="83" height="30"/>
+            <size key="intrinsicContentSize" width="92" height="30"/>
         </designable>
     </designables>
     <resources>

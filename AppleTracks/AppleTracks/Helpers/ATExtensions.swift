@@ -50,3 +50,19 @@ extension Sequence {
 extension LosslessStringConvertible {
     var string: String { .init(self) }
 }
+
+
+// Extension for formatting the date
+extension DateFormatter {
+    static let yyyyMMdd: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = atDateFormat
+        return formatter
+    }()
+    
+    static let dateString: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = atDateStringFormat
+        return formatter
+    }()
+}

@@ -30,7 +30,6 @@
 		F2088094276FBD10008FD0BF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088093276FBD10008FD0BF /* APIManager.swift */; };
 		F2088096276FBDA2008FD0BF /* ATPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088095276FBDA2008FD0BF /* ATPayload.swift */; };
 		F2088098276FBF86008FD0BF /* ATMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088097276FBF86008FD0BF /* ATMusic.swift */; };
-		F22F308B2770D8E800FA5EDD /* ATDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F308A2770D8E800FA5EDD /* ATDateFormatter.swift */; };
 		F22F308D2770DE1400FA5EDD /* ATTrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F308C2770DE1400FA5EDD /* ATTrackTableViewCell.swift */; };
 		F22F308F2770F12400FA5EDD /* TracksDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F308E2770F12400FA5EDD /* TracksDetailViewController.swift */; };
 		F22F30912771063900FA5EDD /* ATButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F30902771063900FA5EDD /* ATButton.swift */; };
@@ -85,7 +84,6 @@
 		F2088093276FBD10008FD0BF /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		F2088095276FBDA2008FD0BF /* ATPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATPayload.swift; sourceTree = "<group>"; };
 		F2088097276FBF86008FD0BF /* ATMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMusic.swift; sourceTree = "<group>"; };
-		F22F308A2770D8E800FA5EDD /* ATDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATDateFormatter.swift; sourceTree = "<group>"; };
 		F22F308C2770DE1400FA5EDD /* ATTrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATTrackTableViewCell.swift; sourceTree = "<group>"; };
 		F22F308E2770F12400FA5EDD /* TracksDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksDetailViewController.swift; sourceTree = "<group>"; };
 		F22F30902771063900FA5EDD /* ATButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATButton.swift; sourceTree = "<group>"; };
@@ -143,12 +141,9 @@
 			children = (
 				F2088049276BAAA7008FD0BF /* AppDelegate.swift */,
 				F208804B276BAAA7008FD0BF /* SceneDelegate.swift */,
-				F22F308E2770F12400FA5EDD /* TracksDetailViewController.swift */,
-				F22F309227710CF300FA5EDD /* TracksDetailViewProtocols.swift */,
-				F22F309427710FEB00FA5EDD /* TracksDetailRouter.swift */,
-				F22F30902771063900FA5EDD /* ATButton.swift */,
 				F2088083276BD4DE008FD0BF /* Helpers */,
 				F208808C276CCE81008FD0BF /* VIPER(TracksView) */,
+				F228C1502771337C00372A65 /* Detail View */,
 				F208804F276BAAA7008FD0BF /* Main.storyboard */,
 				F2088052276BAAA8008FD0BF /* Assets.xcassets */,
 				F2088054276BAAA8008FD0BF /* LaunchScreen.storyboard */,
@@ -188,7 +183,6 @@
 				F2088091276FBBE1008FD0BF /* ATExtensions.swift */,
 				F2088093276FBD10008FD0BF /* APIManager.swift */,
 				F2088095276FBDA2008FD0BF /* ATPayload.swift */,
-				F22F308A2770D8E800FA5EDD /* ATDateFormatter.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -196,15 +190,98 @@
 		F208808C276CCE81008FD0BF /* VIPER(TracksView) */ = {
 			isa = PBXGroup;
 			children = (
-				F208804D276BAAA7008FD0BF /* TracksViewController.swift */,
-				F22F308C2770DE1400FA5EDD /* ATTrackTableViewCell.swift */,
-				F2088084276BD6B9008FD0BF /* TracksViewProtocols.swift */,
-				F2088086276CCDE5008FD0BF /* TracksViewPresenter.swift */,
-				F2088088276CCDF5008FD0BF /* TracksViewInteractor.swift */,
-				F208808A276CCE03008FD0BF /* TracksRouter.swift */,
-				F2088097276FBF86008FD0BF /* ATMusic.swift */,
+				F228C14A2771333600372A65 /* View */,
+				F228C14B2771334000372A65 /* Protocols */,
+				F228C14C2771334A00372A65 /* Presenter */,
+				F228C14D2771335200372A65 /* Interactor */,
+				F228C14E2771335900372A65 /* Router */,
+				F228C14F2771335F00372A65 /* Entity */,
 			);
 			path = "VIPER(TracksView)";
+			sourceTree = "<group>";
+		};
+		F228C14A2771333600372A65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F208804D276BAAA7008FD0BF /* TracksViewController.swift */,
+				F22F308C2770DE1400FA5EDD /* ATTrackTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F228C14B2771334000372A65 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F2088084276BD6B9008FD0BF /* TracksViewProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F228C14C2771334A00372A65 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F2088086276CCDE5008FD0BF /* TracksViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F228C14D2771335200372A65 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F2088088276CCDF5008FD0BF /* TracksViewInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F228C14E2771335900372A65 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F208808A276CCE03008FD0BF /* TracksRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F228C14F2771335F00372A65 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F2088097276FBF86008FD0BF /* ATMusic.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F228C1502771337C00372A65 /* Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				F228C1512771339500372A65 /* View */,
+				F228C1522771339900372A65 /* Protocols */,
+				F228C153277133A000372A65 /* Router */,
+			);
+			path = "Detail View";
+			sourceTree = "<group>";
+		};
+		F228C1512771339500372A65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F22F308E2770F12400FA5EDD /* TracksDetailViewController.swift */,
+				F22F30902771063900FA5EDD /* ATButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F228C1522771339900372A65 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F22F309227710CF300FA5EDD /* TracksDetailViewProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F228C153277133A000372A65 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F22F309427710FEB00FA5EDD /* TracksDetailRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,7 +422,6 @@
 				F2088089276CCDF5008FD0BF /* TracksViewInteractor.swift in Sources */,
 				F208807A276BABD2008FD0BF /* URLSessionProtocol.swift in Sources */,
 				F22F309527710FEB00FA5EDD /* TracksDetailRouter.swift in Sources */,
-				F22F308B2770D8E800FA5EDD /* ATDateFormatter.swift in Sources */,
 				F22F308F2770F12400FA5EDD /* TracksDetailViewController.swift in Sources */,
 				F2088090276FBB82008FD0BF /* ATLayoutHelper.swift in Sources */,
 				F208804E276BAAA7008FD0BF /* TracksViewController.swift in Sources */,

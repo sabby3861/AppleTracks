@@ -21,6 +21,7 @@ struct ATMusic: Codable, ATResponseProtocol {
     var price: Double
     var date: Date
     var duration: Int
+    var url: String?
     
     enum CodingKeys: String, CodingKey {
         case track = "trackName"
@@ -29,6 +30,7 @@ struct ATMusic: Codable, ATResponseProtocol {
         case price = "trackPrice"
         case date = "releaseDate"
         case duration = "trackTimeMillis"
+        case url = "trackViewUrl"
     }
 }
 
@@ -39,13 +41,5 @@ protocol ATResponseProtocol {
     var image: String? {get set}
     var date: Date {get set}
     var duration: Int {get set}
-}
-struct ATResponse: ATResponseProtocol {
-    var track: String?
-    var price: Double
-    var name: String?
-    var image: String?
-    var date: Date
-    var duration: Int
-    
+    var url: String? {get set}
 }
