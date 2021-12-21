@@ -77,10 +77,3 @@ enum ATHTTPUrl: String {
 struct ATAPIModule {
     var payloadType: ATHTTPPayloadType?    
 }
-
-
-enum ATSearchType: String {
-  case album = "album.search"
-  case song = "track.search"
-  case artist = "artist.search"
-}
