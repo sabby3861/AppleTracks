@@ -28,7 +28,6 @@ struct ATHTTPPayload: ATHTTPPayloadProtocol {
     var type: ATHTTPPayloadType?
     var headers: Dictionary<String, String>?
     var url: URL?
-    let apiKey = "aa8e1202264ab46b248d9583c0cda190"
     fileprivate init(url: ATHTTPUrl, payload: ATAPIModule) {
         self.type = payload.payloadType
         var components = URLComponents()
