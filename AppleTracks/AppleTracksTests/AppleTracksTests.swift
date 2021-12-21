@@ -39,10 +39,18 @@ class AppleTracksTests: XCTestCase, PayLoadFormat {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
+    ///Set any baseline time you want to test for performance
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
+            var apiModule = ATAPIModule()
+            apiModule.payloadType = ATHTTPPayloadType.requestMethodGET
+            let payload = formatGetPayload(url: .albumsUrl, module: apiModule)
+            let api = APIManager()
+            api.getAlbumsInfo(payload: payload) { result in
+                
+            }
         }
     }
     /**
@@ -61,12 +69,40 @@ class AppleTracksTests: XCTestCase, PayLoadFormat {
         XCTAssertNil(router.presenter?.view, "View can not be nil")
     }
     
+    /**
+     Test case to check if the detail view has been configured to show
+     */
     func testThatItShowsDetailViewScreen() {
         router.showDetailView(detailView: detailView, album: music!)
         XCTAssertTrue(router.showDetailViewCalled)
         XCTAssertNil(router.presenter?.view, "View can not be nil")
     }
     
+    /**
+     Test case to check if the url is a valid url or not
+     Supply some invalid url string to make it fail
+     */
+    func testIfCanOpenURL() {
+        let validUrl = verifyUrl(urlString: music.url)
+        if validUrl {
+            XCTAssertTrue(validUrl)
+        } else {
+            XCTFail("Received nil or invalid URL")
+        }
+    }
+    
+    func verifyUrl (urlString: String?) -> Bool {
+        if let urlString = urlString {
+            if let url = NSURL(string: urlString) {
+                return UIApplication.shared.canOpenURL(url as URL)
+            }
+        }
+        return false
+    }
+    
+    /**
+     Test case to check  for API call and data
+     */
     func testAlbumsAPICalls()  {
         var apiModule = ATAPIModule()
         apiModule.payloadType = ATHTTPPayloadType.requestMethodGET
