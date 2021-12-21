@@ -53,13 +53,7 @@ class AppleTracksTests: XCTestCase, PayLoadFormat {
             }
         }
     }
-    /**
-     Test case data for Album
-     */
-    func mockData()  {
-        let date = DateFormatter.dateString.date(from: "2011-07-05T12:00:00Z")
-        music = TestATMusic(track: "Jazz Love Song", name: "Love Me", image: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/47/c4/a2/47c4a2fa-4001-ea50-d109-f81d32778ec1/source/100x100bb.jpg", price: 2.3, date: date ?? Date(), duration: 5, url: "https://music.apple.com/us/album/somebody-that-i-used-to-know-feat-kimbra/1467951962?i=1467952309&uo=4")
-    }
+  
     /**
      Test case to check if the Module gas been added and the view has been configured to show
      */
@@ -89,15 +83,6 @@ class AppleTracksTests: XCTestCase, PayLoadFormat {
         } else {
             XCTFail("Received nil or invalid URL")
         }
-    }
-    
-    func verifyUrl (urlString: String?) -> Bool {
-        if let urlString = urlString {
-            if let url = NSURL(string: urlString) {
-                return UIApplication.shared.canOpenURL(url as URL)
-            }
-        }
-        return false
     }
     
     /**
@@ -149,5 +134,24 @@ extension AppleTracksTests {
         var date: Date
         var duration: Int
         var url: String?
+    }
+    
+    /**
+     Test case data for Album
+     */
+    func mockData()  {
+        let date = DateFormatter.dateString.date(from: "2011-07-05T12:00:00Z")
+        music = TestATMusic(track: "Jazz Love Song", name: "Love Me", image: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/47/c4/a2/47c4a2fa-4001-ea50-d109-f81d32778ec1/source/100x100bb.jpg", price: 2.3, date: date ?? Date(), duration: 5, url: "https://music.apple.com/us/album/somebody-that-i-used-to-know-feat-kimbra/1467951962?i=1467952309&uo=4")
+    }
+    /**
+     Function to check if url string is valid url or not
+     */
+    func verifyUrl (urlString: String?) -> Bool {
+        if let urlString = urlString {
+            if let url = NSURL(string: urlString) {
+                return UIApplication.shared.canOpenURL(url as URL)
+            }
+        }
+        return false
     }
 }
