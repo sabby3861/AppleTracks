@@ -205,7 +205,6 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="string" keyPath="selectedText" value="More Details"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="deselectedText" value="More Details"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="textColorDeselected">
                                                 <color key="value" systemColor="labelColor"/>
                                             </userDefinedRuntimeAttribute>
