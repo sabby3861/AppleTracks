@@ -55,14 +55,3 @@ extension TracksViewController: UITableViewDataSource{
 }
 
 
-extension TracksViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        /*let storyboard = UIStoryboard.storyboard(storyboard: .Main)
-        let view: LFDetailViewController = storyboard.instantiateVieController()
-        guard let result = presenter?.response?[indexPath.row] else { return  }
-        //view.result = result
-        LFDetailRouter().assembleModule(response: result, view: view)
-        self.navigationController?.pushViewController(view, animated: true)*/
-    }
-}
-
