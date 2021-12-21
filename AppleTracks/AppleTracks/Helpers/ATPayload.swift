@@ -71,14 +71,9 @@ enum ATHTTPPayloadType{
 }
 
 enum ATHTTPUrl: String {
-    //case albumsUrl = "https://ws.audioscrobbler.com/2.0/?method=album.search&album=yourlove&api_key=aa8e1202264ab46b248d9583c0cda190&format=json"
     case albumsUrl = "itunes.apple.com"
 }
-/*
- API key    aa8e1202264ab46b248d9583c0cda190
- Shared secret    04d16e590fd03fc64f107c82b8ba59e7
- */
-//https://itunes.apple.com/search/?term=rock&media=music
+
 
 struct ATAPIModule {
     var payloadType: ATHTTPPayloadType?    
