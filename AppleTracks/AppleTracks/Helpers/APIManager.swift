@@ -16,7 +16,6 @@ protocol LFAPIServiceProtocol {
 /// APIManager Protocol
 protocol APIManagerProtocol {
     func getAlbumsInfo(payload: ATHTTPPayloadProtocol,completion: @escaping (Result<ATMusicResponse, Error>) -> Void)
-    func getSongsInfo(payload: ATHTTPPayloadProtocol, completion: @escaping (Result<ATMusicResponse, Error>) -> Void)
 }
 
 /// Network status
@@ -142,14 +141,5 @@ extension APIManager: APIManagerProtocol {
     func getAlbumsInfo(payload: ATHTTPPayloadProtocol, completion: @escaping (Result<ATMusicResponse, Error>) -> Void){
         sendRequest(payload: payload,completion: completion)
     }
-    /**
-     Retrieve the Songs
-     - Parameter id:  Payload protocol, containing payload data
-     - Parameter completion: Result of api call
-     */
-    func getSongsInfo(payload: ATHTTPPayloadProtocol, completion: @escaping (Result<ATMusicResponse, Error>) -> Void){
-        sendRequest(payload: payload,completion: completion)
-    }
-
 }
 
