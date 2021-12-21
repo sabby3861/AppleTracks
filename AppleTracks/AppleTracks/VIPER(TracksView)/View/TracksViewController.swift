@@ -45,7 +45,7 @@ extension TracksViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ATTrackTableViewCell.reuseIdentifier, for: indexPath) as? ATTrackTableViewCell else {
-            fatalError("cellError")
+            fatalError(cellError)
         }
         if let albumInfo = presenter?.response?[indexPath.row] {
             cell.displayData(album: albumInfo)
