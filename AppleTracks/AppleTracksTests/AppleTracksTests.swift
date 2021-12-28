@@ -14,7 +14,7 @@ class AppleTracksTests: XCTestCase {
     var service: APIManagerProtocol!
     var view: TracksViewProtocol!
     var detailView: TracksDetailViewProtocol!
-    var music: TestATMusic!
+    var music: ATResponseProtocol!
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
