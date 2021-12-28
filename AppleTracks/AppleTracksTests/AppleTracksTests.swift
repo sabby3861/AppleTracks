@@ -8,7 +8,7 @@
 import XCTest
 @testable import AppleTracks
 
-class AppleTracksTests: XCTestCase, PayLoadFormat {
+class AppleTracksTests: XCTestCase {
 
     var router: TestTrackRouter!
     var service: APIManagerProtocol!
@@ -44,11 +44,8 @@ class AppleTracksTests: XCTestCase, PayLoadFormat {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
-            var apiModule = ATAPIModule()
-            apiModule.payloadType = ATHTTPPayloadType.requestMethodGET
-            let payload = formatGetPayload(url: .albumsUrl, module: apiModule)
-            let api = APIManager()
-            api.getAlbumsInfo(payload: payload) { result in
+            let payload = getPayload()
+            service.getAlbumsInfo(payload: payload) { result in
                 
             }
         }
@@ -89,12 +86,9 @@ class AppleTracksTests: XCTestCase, PayLoadFormat {
      Test case to check  for API call and data
      */
     func testAlbumsAPICalls()  {
-        var apiModule = ATAPIModule()
-        apiModule.payloadType = ATHTTPPayloadType.requestMethodGET
-        let payload = formatGetPayload(url: .albumsUrl, module: apiModule)
-        let api = APIManager()
+        let payload = getPayload()
         let expect = expectation(description: "API response completion")
-        api.getAlbumsInfo(payload: payload) { result in
+        service.getAlbumsInfo(payload: payload) { result in
             expect.fulfill()
             switch result {
             case .success(let data):
@@ -108,7 +102,7 @@ class AppleTracksTests: XCTestCase, PayLoadFormat {
 
 }
 
-extension AppleTracksTests {
+extension AppleTracksTests: PayLoadFormat {
     class TestTrackRouter: TracksRouterProtocol {
         
         var presenter: TracksPresenterProtocol?
@@ -153,5 +147,14 @@ extension AppleTracksTests {
             }
         }
         return false
+    }
+    
+    /**
+     Function to get the Payload for Get method
+     */
+    func getPayload() -> ATHTTPPayloadProtocol {
+        var apiModule = ATAPIModule()
+        apiModule.payloadType = ATHTTPPayloadType.requestMethodGET
+        return formatGetPayload(url: .albumsUrl, module: apiModule)
     }
 }
