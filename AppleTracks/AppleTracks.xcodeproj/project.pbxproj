@@ -35,6 +35,8 @@
 		F22F30912771063900FA5EDD /* ATButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F30902771063900FA5EDD /* ATButton.swift */; };
 		F22F309327710CF300FA5EDD /* TracksDetailViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F309227710CF300FA5EDD /* TracksDetailViewProtocols.swift */; };
 		F22F309527710FEB00FA5EDD /* TracksDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F309427710FEB00FA5EDD /* TracksDetailRouter.swift */; };
+		F288758E2783857C00862C0A /* ATImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288758D2783857C00862C0A /* ATImageLoader.swift */; };
+		F288759027838B9300862C0A /* ATImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288758F27838B9300862C0A /* ATImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		F22F30902771063900FA5EDD /* ATButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATButton.swift; sourceTree = "<group>"; };
 		F22F309227710CF300FA5EDD /* TracksDetailViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksDetailViewProtocols.swift; sourceTree = "<group>"; };
 		F22F309427710FEB00FA5EDD /* TracksDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksDetailRouter.swift; sourceTree = "<group>"; };
+		F288758D2783857C00862C0A /* ATImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATImageLoader.swift; sourceTree = "<group>"; };
+		F288758F27838B9300862C0A /* ATImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +249,8 @@
 			isa = PBXGroup;
 			children = (
 				F2088097276FBF86008FD0BF /* ATMusic.swift */,
+				F288758D2783857C00862C0A /* ATImageLoader.swift */,
+				F288758F27838B9300862C0A /* ATImageCache.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -427,6 +433,8 @@
 				F208804E276BAAA7008FD0BF /* TracksViewController.swift in Sources */,
 				F208804A276BAAA7008FD0BF /* AppDelegate.swift in Sources */,
 				F2088082276BD4AB008FD0BF /* ATConstants.swift in Sources */,
+				F288759027838B9300862C0A /* ATImageCache.swift in Sources */,
+				F288758E2783857C00862C0A /* ATImageLoader.swift in Sources */,
 				F2088092276FBBE1008FD0BF /* ATExtensions.swift in Sources */,
 				F208807E276BD42A008FD0BF /* ATStoryBoard.swift in Sources */,
 				F2088085276BD6B9008FD0BF /* TracksViewProtocols.swift in Sources */,
